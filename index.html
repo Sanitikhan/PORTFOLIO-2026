@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="sage">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=html,javascript,php,commit,responsive_layout,palette,layers,accessibility,assignment,message,group,mail" />
+    <!--LOGO TEMPORAIRE-->
+    <link rel="icon" type="image/icon" href="assets/logo.png">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="#home" aria-label="Portfolio home">
+                <span class="brand-mark" aria-hidden="true">P</span>
+                <span>portfolio<span class="brand-period">.</span></span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#about">A Propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="color-toggle" role="group" aria-label="Choisir une palette de couleurs">
+                <button class="color-swatch color-swatch-sage" type="button" data-theme="sage" aria-label="Palette sauge" aria-pressed="true"></button>
+                <button class="color-swatch color-swatch-rose" type="button" data-theme="rose" aria-label="Palette rose" aria-pressed="false"></button>
+                <button class="color-swatch color-swatch-lavender" type="button" data-theme="lavender" aria-label="Palette lavande" aria-pressed="false"></button>
+            </div>
+
+            <a class="contact-link" href="#contact">
+                Prenons contact ! <span aria-hidden="true">↗</span>
+            </a>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <!-- HERO SECTION -->
+        <div class="section hero-section" id="home">
+            <div class="main-hero-content">
+                <div class="hero-title">
+                    <h1>L'univers de Sanimbes</h1>
+                </div>
+                <div class="hero-description">
+                    <p>De l'idée initiale au code fonctionnel : je transforme les concepts en interfaces vivantes. Explorez mes projets et prenez contact !</p>
+                </div>
+                <div class="hero-buttons">
+                    <a class="button" href="#projects">Découvrir mes projets</a>
+                    <a class="button button-secondary" href="#contact">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/me.png" alt="Hero image representing my work">
+            </div>
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <section class="section about-section" id="about">
+            <h2>A Propos</h2>
+            <div class="section-text">
+                <p>Découvrons mon univers ensemble.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-copy">
+                    <p class="about-intro">Coucou, Je suis Anaëlle. Je suis passionée par le développement web/mobile et le design.</p>
+                    <p>J'aime prendre une simple idée, esquisser son aspect visuel, puis la regarder s'animer et devenir pleinement fonctionnelle grâce au code.</p>
+                    <p>En tant que développeuse, je vois chaque projet comme un terrain de jeu où la logique rencontre la créativité. J'aime concevoir des expériences qui ont du sens, où le design et la technique parlent le même langage.</p>
+                    <p>Curieuse de tout ce qui raconte une histoire, que ce soit à travers un roman, un objectif photo, un jeu vidéo, une chanson ou le bout de ma plume, j'apporte cette même sensibilité artistique à mes projets numériques.</p>
+                    <p>Curieux d'en savoir plus ? Discutons !</p>
+
+                    <div class="about-skills-section">
+                        <h3>Compétences &amp; outils</h3>
+                        <div class="about-skills">
+                        <div class="skills-category">
+                            <h4>Code et Web</h4>
+                            <ul class="skills-list">
+                                <li><span class="material-symbols-rounded">html</span>HTML/CSS</li>
+                                <li><span class="material-symbols-rounded">javascript</span>JavaScript</li>
+                                <li><span class="material-symbols-rounded">php</span>PHP</li>
+                                <li><span class="material-symbols-rounded">commit</span>Git</li>
+                                <li><span class="material-symbols-rounded">responsive_layout</span>Responsive Design</li>
+                            </ul>
+                        </div>
+                        <div class="skills-category">
+                            <h4>Design et UI</h4>
+                            <ul class="skills-list">
+                                <li><span class="material-symbols-rounded">palette</span>Figma</li>
+                                <li><span class="material-symbols-rounded">layers</span>Prototypage</li>
+                                <li><span class="material-symbols-rounded">accessibility</span>Principes d'accessibilité</li>
+                            </ul>
+                        </div>
+                        <div class="skills-category">
+                            <h4>Autres compétences</h4>
+                            <ul class="skills-list">
+                                <li><span class="material-symbols-rounded">assignment</span>Gestion de projet</li>
+                                <li><span class="material-symbols-rounded">message</span>Communication</li>
+                                <li><span class="material-symbols-rounded">group</span>Travail en équipe</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-highlights" aria-label="About me highlights">
+                    <article class="about-highlight">
+                        <h3>Jeu du moment</h3>
+                        <div class="highlight-content">
+                            <div class="highlight-image" aria-hidden="true">
+                                <img src="assets/minecraft.png" alt="Minecraft">
+                            </div>
+                            <p>Minecraft</p>
+                        </div>
+                    </article>
+                    <article class="about-highlight">
+                        <h3>Musique du moment</h3>
+                        <div class="highlight-content">
+                            <div class="highlight-image" aria-hidden="true">
+                                <img src="assets/yspsfagsil.jpeg" alt="You seem pretty sad for a girl so in love">
+                            </div>
+                            <p>Stupid Song - Olivia Rodrigo</p>
+                        </div>
+                    </article>
+                    <article class="about-highlight">
+                        <h3>Livre du moment</h3>
+                        <div class="highlight-content">
+                            <div class="highlight-image" aria-hidden="true">
+                                <img src="assets/agggtm.jpg" alt="A good girl's guide to murder">
+                            </div>
+                            <p>A Good Girl's Guide To Murder - Holly Jackson</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <div class="section projects-section" id="projects">
+            <h2>Projets</h2>
+            <div class="section-text">
+                <p>Voici quelques-uns des projets sur lesquels j'ai travaillé.</p>
+            </div>
+            <!-- Grid of Project details would go here -->
+            <div class="projects-grid">
+                <!-- Add image paths to each card's data-* attributes; separate multiple paths with |. -->
+                <div class="project-card" data-prototype-images="" data-design-images="" data-result-images="" data-videos="">
+                    <div class="project-title">
+                        <div class="project-logo">
+                            <img src="assets/project1_logo.png" alt="Logo pokedex">
+                        </div>
+                        <h3>POKEDEX</h3>
+                    </div>
+                    <div class="project-image" aria-hidden="true">
+                        <img src="assets/project1.png" alt="Screenshot of Project 1">
+                    </div>
+                    <div class="project-badges">
+                        <span class="badge badge-html">HTML</span>
+                        <span class="badge badge-css">CSS</span>
+                        <span class="badge badge-javascript">JavaScript</span>
+                    </div>
+                    <div class="project-date">
+                        <p>Avril 2024</p>
+                    </div>
+                    <div class="project-type">
+                        <p>Projet Scolaire</p>
+                    </div>
+                    <div class="project-description">
+                        <p>Mise en place d'un Pokédex interactif avec récupération des données depuis une API.</p>
+                    </div>
+                    <div class="project-modal-details" hidden>
+                        <section>
+                            <h3>Le projet</h3>
+                            <p>Pkédex interatif.</p>
+                            <h3>Contexte</h3>
+                            <p>Premier projet individuel (Bachelor Informatique)</p>
+                            <h3>L'objectif</h3>
+                            <p>Concevoir et développer une application web dynamique permettant de rechercher et d'afficher les caractéristiques de différents Pokémon. L'enjeu principal était d'apprendre à connecter une interface utilisateur à une API externe en gérant l'affichage de données en temps réel.</p>
+                        </section>
+                        <section>
+                            <h3>Fonctionnalités</h3>
+                            <ul>
+                                <li>Structuration d'une interface épurée pour présenter les Pokémon, le formulaire de recherche et les éléments de navigation.</li>
+                                <li>Envoi de requêtes asynchrones pour récupérer la liste des Pokémon, parser le format JSON et extraire les données clés (visuels, types, statistiques, numéros).</li>
+                                <li>Développement d'un système de filtre dynamique permettant la recherche par nom ou par identifiant unique.</li>
+                                <li>Prise en charge des cas limites, comme les erreurs de saisie ou l'absence de résultats, avec affichage des messages clairs pour l'utilisateur.</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Mon rôle et ce que j'ai appris</h3>
+                            <p>S'agissant de mon tout premier projet individuel, j'ai assuré l'ensemble du cycle de développement de A à Z : de la réflexion de l'interface jusqu'à la logique JavaScript de récupération des données.</p>
+                            <ul>
+                                <li>Compréhension fondamentale du fonctionnement des requêtes HTTP (asynchronisme), de l'exploitation des données au format JSON et de l'injection dynamique dans le DOM.</li>
+                                <li>Utilisation des outils de développement du navigateur pour déboguer le code JavaScript, inspecter le réseau et analyser les réponses de l'API.</li>
+                                <li>Première concrétisation d'un projet fonctionnel en autonomie, posant les bases solides de ma pratique du développement web.</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Sanitikhan/POKEAPI" target="_blank" rel="noopener noreferrer">Voir sur GitHub</a>
+                        <a href="https://sanitikhan.github.io/POKEAPI/index.html" target="_blank" rel="noopener noreferrer">Demo</a>
+                    </div>
+                </div>
+                <div class="project-card" data-prototype-images="" data-design-images="" data-result-images="assets/project2_result.png | assets/project2_result2.png" data-videos="assets/project2_video.mp4 | assets/project2_video2.mp4">
+                    <div class="project-title">
+                        <div class="project-logo">
+                            <img src="assets/project2_logo.png" alt="Logo TORILLEC">
+                        </div>
+                        <h3>TORILLEC</h3>
+                    </div>
+                    <div class="project-image" aria-hidden="true">
+                        <img src="assets/project2.png" alt="Screenshot of Project 2">
+                    </div>
+                    <div class="project-badges">
+                        <span class="badge badge-html">HTML</span>
+                        <span class="badge badge-css">CSS</span>
+                        <span class="badge badge-javascript">JavaScript</span>
+                        <span class="badge badge-php">PHP</span>
+                    </div>
+                    <div class="project-date">
+                        <p>Mai 2024</p>
+                    </div>
+                    <div class="project-type">
+                        <p>Projet Scolaire</p>
+                    </div>
+                    <div class="project-description">
+                        <p>Application de gestion de tickets pour une entreprise.</p>
+                    </div>
+                    <div class="project-modal-details" hidden>
+                        <section>
+                            <h3>Le projet</h3>
+                            <p>Application de gestion de tickets de frais pour une entreprise.</p>
+                            <h3>Contexte</h3>
+                            <p>Projet de groupe (Bachelor Informatique).</p>
+                            <h3>L'objectif</h3>
+                            <p>Créer une application web permetttant aux collaborateurs de l'entreprise fictive de gérer leurs notes de frais professionnel de manière centralisée. L'application devrait couvrir l'ensemble du cycle de vie des tickets, de la saisie à la suppression, en passant par le suivi et l'authentification.</p>
+                        </section>
+                        <section>
+                            <h3>Fonctionnalités</h3>
+                            <ul>
+                                <li>Participation à la mise en place d'un système d'accès sécurisé pour identifier l'utilisateur et lui donner accès à son espace personnel.</li>
+                                <li>Création des formulaires interactifs pour l'ajout, la modification et la suppression dynamique des tickets de frais.</li>
+                                <li>Prise en compte des catégories de frais (restauration, hébergement, transport) avec validation des champs d'entrée.</li>
+                                <li>Développement d'une vue synthétique de l'ensemble des tickets avec filtres dynamiques par catégorie de dépense.</li>
+                                <li>Rédaction et structuration de la documentation technique et fonctionnelle du projet.</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Mon rôle et ce que j'ai appris</h3>
+                            <p>Dans le cadre de ce premier projet collectif, j'ai occupé une double responsabilité : responsable du développement Front-End pour la création des interfaces utilisateur, et vice-chef d'équipe, rôle dans lequel j'ai notamment encadré la rédaction et l'harmonisation de la documentation globale du projet.</p>
+                            <ul>
+                                <li>Apprentissage de la répartition des tâches, du suivi de projet et de la coordination entre les parties de l'application.</li>
+                                <li>Maîtrise de la manipulation des données côté client (création, lecture, mise à jour, suppression) liée aux notes de frais.</li>
+                                <li>Sensibilisation à l'importance d'une documentation claire et structurée pour faciliter la reprise du code et la communication au sein de l'équipe.</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Sanitikhan/PROJET_WEB" target="_blank" rel="noopener noreferrer">Voir sur GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card" data-prototype-images="" data-design-images="" data-result-images="" data-videos="">
+                    <div class="project-title">
+                        <div class="project-logo">
+                            <img src="assets/project3_logo.png" alt="Logo Supermarket App">
+                        </div>
+                        <h3>Supermarket App</h3>
+                    </div>
+                    <div class="project-image" aria-hidden="true">
+                        <img src="assets/project3.png" alt="Screenshot of Project 3">
+                    </div>
+                    <div class="project-badges">
+                        <span class="badge badge-html">HTML</span>
+                        <span class="badge badge-css">CSS</span>
+                        <span class="badge badge-javascript">JavaScript</span>
+                    </div>
+                    <div class="project-date">
+                        <p>Février 2024</p>
+                    </div>
+                    <div class="project-type">
+                        <p>Projet Scolaire/Projet Personnel</p>
+                    </div>
+                    <div class="project-description">
+                        <p>Application de gestion de supermarché pour la gestion des produits et des commandes.</p>
+                    </div>
+                    <div class="project-modal-details" hidden>
+                        <section>
+                            <h3>Le projet</h3>
+                            <p>[Présentez le contexte et l'objectif de l'application.]</p>
+                        </section>
+                        <section>
+                            <h3>Fonctionnalités</h3>
+                            <ul>
+                                <li>[Décrivez une fonctionnalité importante.]</li>
+                                <li>[Ajoutez une autre fonctionnalité.]</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Mon rôle et ce que j'ai appris</h3>
+                            <p>[Expliquez votre contribution, un défi rencontré et comment vous l'avez résolu.]</p>
+                        </section>
+                    </div>
+                    <div class="project-links">
+                        <p>Non disponible</p>
+                    </div>
+                </div>
+                <div class="project-card" data-prototype-images="" data-design-images="" data-result-images="assets/project4_result.png | assets/project4_result2.png | assets/project4_result3.png" data-videos="">
+                    <div class="project-title">
+                        <div class="project-logo">
+                            <img src="assets/project4_logo.png" alt="Logo STAGE">
+                        </div>
+                        <h3>STAGE</h3>
+                    </div>
+                    <div class="project-image" aria-hidden="true">
+                        <img src="assets/project4.png" alt="Screenshot of Project 4">
+                    </div>
+                    <div class="project-badges">
+                        <span class="badge badge-html">HTML</span>
+                        <span class="badge badge-css">CSS</span>
+                        <span class="badge badge-javascript">JavaScript</span>
+                    </div>
+                    <div class="project-date">
+                        <p>Juin-Juillet 2024</p>
+                    </div>
+                    <div class="project-type">
+                        <p>Projet professionnel</p>
+                    </div>
+                    <div class="project-description">
+                        <p>Refonte d'un site web de formation professionnelle.</p>
+                    </div>
+                    <div class="project-modal-details" hidden>
+                        <section>
+                            <h3>Le projet</h3>
+                            <p>Refonte globale d'un site web de formation professionnelle pour améliorer l'expérience utilisateur et la performance du site.</p>
+                            <h3>Contexte</h3>
+                            <p>Stage de fin de 1ère année de Bachelor Informatique (Durée: 2 mois).</p>
+                            <h3>L'objectif</h3>
+                            <p>Moderniser l'image de marque de l'entreprise et optimiser l'expérience utilisateur (UX) afin de faciliter la découverte des formations. Le site existant nécessitait une remise au goût du jour de son interface graphique toutes en gardant les informations principales de l'ancien site.</p>
+                        </section>
+                        <section>
+                            <h3>Travail réalisé</h3>
+                            <ul>
+                                <li>Etude des besoins de l'entreprise, identification des points principaux de l'ancien site et analyse de la cible.</li>
+                                <li>Création du front-end pour structurer clairement l'offre de formation.</li>
+                                <li>Simplification de l'accès aux catalogues de formation et mise en valeur des boutons d'action pour les demandes de devis.</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Mon rôle et ce que j'ai appris</h3>
+                            <p>Initialement prévu en trio avec des camarades de classe, le projet s'est principalement concrétisé en duo. J'ai pris une part active dans l'ensemble du projet, du design à l'intégration. cette dynamique de binôme restraint nous a poussés à renforcer notre communication, à mieux répartir la charge de travail et à faire preuve d'adaptabilité pour tenir les délais.</p>
+                        </section>
+                    </div>
+                    <div class="project-links">
+                        <p>Non disponible</p>
+                    </div>
+                </div>
+                <div class="project-card" data-prototype-images="assets/project5_prototype.png" data-design-images="assets/project5_figma.png" data-result-images="assets/project5_result.png" data-videos="">
+                    <div class="project-title">
+                        <div class="project-logo">
+                            <img src="assets/IL PIATTO.png" alt="Logo of Il Piatto restaurant">
+                        </div>
+                        <h3>IL PIATTO</h3>
+                    </div>
+                    <div class="project-image" aria-hidden="true">
+                        <img src="assets/project5.png" alt="Screenshot of Project 5">
+                    </div>
+                    <div class="project-badges">
+                        <span class="badge badge-html">HTML</span>
+                        <span class="badge badge-css">CSS</span>
+                        <span class="badge badge-javascript">JavaScript</span>
+                    </div>
+                    <div class="project-date">
+                        <p>Octobre 2024</p>
+                    </div>
+                    <div class="project-type">
+                        <p>Projet Scolaire</p>
+                    </div>
+                    <div class="project-description">
+                        <p>Workshop d'une semaine. Création d'un site internet pour un restaurant.</p>
+                    </div>
+                    <div class="project-modal-details" hidden>
+                        <section>
+                            <h3>Le projet</h3>
+                            <p>Création complète d'un site web pour un restaurant fictif.</p>
+                            <h3>Contexte</h3>
+                            <p>Workshop intensif d'une semaine (Bachelor Informatique).</p>
+                            <h3>L'objectif</h3>
+                            <p>Imaginer, concevoir et développer la vitrine digitale d'un restaurant de A à Z. Le site devait offrir une expérience immersive aux clients (ambiance visuelle, découverte du concept) tout en étant pratique (consultation du menu, informations pratiques, réservation ou contact).</p>
+                        </section>
+                        <section>
+                            <h3>Travail réalisé</h3>
+                            <ul>
+                                <li>Création de la direction artistique et des maquettes de la page d'accueil (mise en valeur de l'ambiance et du concept du restaurant).</li>
+                                <li>Conception du menu en ligne (architecture claire, lisibilité des plats, prix, allergènes).</li>
+                                <li>Intégration responsive des maquettes de la page d'acceuil et du menu.</li>
+                                <li>Soin particulier apporté à l'ambiance visuelle, à la typographie et à la fluidité de navigation.</li>
+                                <li>Coordination avec le pùole frint-end pour assurer l'homogénéité du site et alignement régulier avec l'équipe back-end pour intégrer les éléments dynamiques.</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Mon rôle et ce que j'ai appris</h3>
+                            <p>Au sein d'une équipe pluridisciplinaire de 6 personnes (divisée entre 3 profils back-end et 3 profils front-end), j'ai pris en charge la conception et l'intégration de la page d'acceuil et la page menu. J'ai mené ces deux pages de bout en bout : de la création des maquettes graphiques jusqu'à leur codage en front-end.</p>
+                            <ul>
+                                <li>Travailler efficacement dans un format "workshop" d'une semaine oblige à aller à l'essentiel, à prioriser les fonctionnalités clés et à prendre des décisions rapides.</li>
+                                <li>Valider concrètement l'efficacité de mon double profil en transformant directement mes propres choix graphiques en code fonctionnel.</li>
+                                <li>Apprendre à communniquer et synchroniser le travail au sein d'une plus grande équipe, en séparant clairement les responsabilités front et back.</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="project-links">
+                        <p>Non disponible</p>
+                    </div>
+                </div>
+                <div class="project-card" data-prototype-images="" data-design-images="assets/project6_figma.png" data-result-images="assets/project6_result.png | assets/project6_result2.png | assets/project6_result3.png" data-videos="assets/project6_video.mp4">
+                    <div class="project-title">
+                        <div class="project-logo">
+                            <img src="assets/project6_logo.png" alt="Logo RANA">
+                        </div>
+                        <h3>RANA</h3>
+                    </div>
+                    <div class="project-image" aria-hidden="true">
+                        <img src="assets/project6.png" alt="Screenshot of Project 6">
+                    </div>
+                    <div class="project-badges">
+                        <span class="badge badge-html">HTML</span>
+                        <span class="badge badge-css">CSS</span>
+                        <span class="badge badge-javascript">JavaScript</span>
+                        <span class="badge badge-php">PHP</span>
+                    </div>
+                    <div class="project-date">
+                        <p>Octobre 2024</p>
+                    </div>
+                    <div class="project-type">
+                        <p>Projet Scolaire</p>
+                    </div>
+                    <div class="project-description">
+                        <p>Gestionnaire de tâches pour la gestion des activités d'entreprise.</p>
+                    </div>
+                    <div class="project-modal-details" hidden>
+                        <section>
+                            <h3>Le projet</h3>
+                            <p>Conception et développement d'un gestionnaire de tâches d'entreprise.</p>
+                            <h3>Contexte</h3>
+                            <p>Projet de groupe (Bachelor Informatique).</p>
+                            <h3>L'objectif</h3>
+                            <p>Créer une application web permettant de structurer et suivre les activités au sein d'une entreprise. L'outil devait gérer l'attribution des rôles (utilisateurs et groupes), l'affection et la validation des tâches, ainsi que le suivi statistique de la progression via des tableaux de bord personnalisés.</p>
+                        </section>
+                        <section>
+                            <h3>Fonctionnalités</h3>
+                            <ul>
+                                <li>Elaboration de l'arborescence et création des maquettes pour l'ensemble du parcours utilisateur (tableaux de bord, vues de tâches, gestion des groupes, profils).</li>
+                                <li>Design d'interfaces intuitives pour simplifier la visualisation de l'avancement des projets et l'interaction avec les tâches (création, assignation, complétion).</li>
+                                <li>Codage de l'intégralité des pages et composants de l'application web, en assurant l'intégration responsive et la cohérence avec la maquette.</li>
+                                <li>Structuration du code front-end pour accueillir la logique de l'application et s'interfacer avec la base de données conçue par l'équipe backend.</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Mon rôle et ce que j'ai appris</h3>
+                            <p>Au sein d'une équipe de 4 personnages (2 sur le backend et 2 sur le design), j'ai pris l'initiative d'élargir mon champ d'action pour mener le projet à terme. Sur la partie design, j'ai concu la grande majorité des maquettes de l'application (ma camarade s'étant concentrée sur les pages d'inscription et de connexion). Côté développement, j'ai pris en charge le codage de l'intégralité du site web.</p>
+                            <ul>  
+                                <li>Maîtrise de la chaîne complète de création d'un outil métier, de l'UX/UI d'un tableau de bord jusqu'à l'intégralité du site web.</li>
+                                <li>Capacité à assumer la responsabilité du code front-end et à garantir les livrables dans un contexte de projet de groupe</li>
+                                <li>Communication avec le binôme backend pour s'assurer que les choix de design et d'intégration répondaient aux contraintes de la base de données.</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Sanitikhan/RANA" target="_blank" rel="noopener noreferrer">Voir sur GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card" data-prototype-images="" data-design-images="assets/project7_figma.png" data-result-images="" data-videos="assets/project7_video.mp4 | assets/project7_video2.mp4">
+                    <div class="project-title">
+                        <div class="project-logo">
+                            <img src="assets/project7_logo.png" alt="Logo FASHION CHIC">
+                        </div>
+                        <h3>FASHION CHIC</h3>
+                    </div>
+                    <div class="project-image" aria-hidden="true">
+                        <img src="assets/project7.png" alt="Screenshot of Project 7">
+                    </div>
+                    <div class="project-badges">
+                        <span class="badge badge-html">HTML</span>
+                        <span class="badge badge-css">CSS</span>
+                        <span class="badge badge-javascript">JavaScript</span>
+                        <span class="badge badge-php">PHP</span>
+                    </div>
+                    <div class="project-date">
+                        <p>Avril à Juillet 2025</p>
+                    </div>
+                    <div class="project-type">
+                        <p>Projet Scolaire</p>
+                    </div>
+                    <div class="project-description">
+                        <p>Gestionnaire de stock textile pour une entreprise de vente de vêtements.</p>
+                    </div>
+                    <div class="project-modal-details" hidden>
+                        <section>
+                            <h3>Le projet</h3>
+                            <p>FASHION CHIC — Application web de gestion de stock textile (Agence INFO' CHAS)</p>
+                            <h3>Contexte</h3>
+                            <p>Projet de fin d'année de groupe (Bachelor Informatique)</p>
+                            <h3>L'objectif</h3>
+                            <p>Moderniser la gestion de stock d'une entreprise de prêt-à-porter qui utilisait jusqu'alors de simples fichiers Excel. À travers notre agence fictive INFO' CHAS, nous avons conçu de A à Z l'application FASHION CHIC : une solution sur-mesure pour centraliser, suivre et optimiser l'inventaire des collections de vêtements.</p>
+                        </section>
+                        <section>
+                            <h3>Fonctionnalités</h3>
+                            <ul>
+                                <li>Création de l'image de marque de l'agence (INFO' CHAS) et de l'identité visuelle de l'application textile (FASHION CHIC).</li>
+                                <li>Design des interfaces adaptées au secteur de la mode (fiches vêtements, tailles, coloris, état des stocks) pour garantir une utilisation fluide.</li>
+                                <li>Conception de la base de données relationnelle (articles, déclinaisons de tailles/couleurs, réapprovisionnements) et codage intégral de l'application web.</li>
+                                <li>Coordination avec la partie infrastructure pour l'hébergement de l'application et la configuration des serveurs.</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Mon rôle et ce que j'ai appris</h3>
+                            <p>Malgré un effectif réduit au fil du projet suite à des départs et imprévus, nous avons fait le choix de maintenir le cap à deux. J'ai assumé l'intégralité de la création de l'application web FASHION CHIC (branding, maquettes UX/UI, développement front-end, logique métier et base de données), tandis que mon binôme s'est concentré sur l'infrastructure et l'hébergement.</p>
+                            <ul>
+                                <li>Combiner l'univers du prêt-à-porter avec les contraintes d'un outil de gestion de stock fonctionnel.</li>
+                                <li>Concevoir seul l'ensemble de l'application web, de la modélisation BDD à l'interface graphique.</li>
+                                <li>Faire preuve de sang-froid pour réorganiser la charge de travail et livrer un projet complet dans les délais, malgré les imprévus d'équipe.</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Sanitikhan/INFO-CHAS" target="_blank" rel="noopener noreferrer">Voir sur GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card" data-prototype-images="" data-design-images="assets/project8_figma.png | assets/project8_figma2.png | assets/project8_figma3.png" data-result-images="assets/project8.png" data-videos="">
+                    <div class="project-title">
+                        <div class="project-logo">
+                            <img src="assets/project8_logo.png" alt="Logo MUSIC PLAYER">
+                        </div>
+                        <h3>Music Player</h3>
+                    </div>
+                    <div class="project-image" aria-hidden="true">
+                        <img src="assets/project8.png" alt="Screenshot of Project 8">
+                    </div>
+                    <div class="project-badges">
+                        <span class="badge badge-html">HTML</span>
+                        <span class="badge badge-css">CSS</span>
+                        <span class="badge badge-javascript">JavaScript</span>
+                        <span class="badge badge-nodejs">Node.js</span>
+                    </div>
+                    <div class="project-date">
+                        <p>Janvier à Mars 2026</p>
+                    </div>
+                    <div class="project-type">
+                        <p>Projet Personnel</p>
+                    </div>
+                    <div class="project-description">
+                        <p>Application de musique avec fonctionnalités de lecture et de gestion de playlist locale.</p>
+                    </div>
+                    <div class="project-modal-details" hidden>
+                        <section>
+                            <h3>Le projet</h3>
+                            <p>Lecteur audio desktop local</p>
+                            <h3>Contexte</h3>
+                            <p>Projet personnel en autonomie</p>
+                            <p>Concevoir et développer une application exécutable (.exe) permettant de lire et gérer une bibliothèque musicale stockée localement sur son ordinateur. L'enjeu était de créer une interface fluide et moderne capable d'interagir directement avec les fichiers du système.</p>
+                        </section>
+                        <section>
+                            <h3>Fonctionnalités</h3>
+                            <ul>
+                                <li>Analyse dynamique du dossier local pour scanner les fichiers audio et extraire leurs données (titre, artiste, pochette d'album, durée).</li>
+                                <li>Développement d'une interface graphique épurée avec lecture dynamique de la progression de la piste en cours.</li>
+                                <li>Intégration de la gestion du volume, de la mise en pause, ainsi que de la navigation fluide entre les morceaux (suivant / précédent).</li>
+                                <li>Compilation de l'environnement Node.js sous forme d'application exécutable (.exe) autonome.</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Mon rôle et ce que j'ai appris</h3>
+                            <p>Projet mené en autonomie, de la réflexion sur l'interface (UI/UX) au choix de l'architecture logicielle et au packaging de l'exécutable.</p>
+                            <ul>
+                                <li>Manipulation du système de fichiers (File System) et gestion d'une application de bureau autonome.</li>
+                                <li>Maîtrise des événements en temps réel (mise à jour de la timeline, suivi de l'état de lecture, gestion du volume).</li>
+                                <li>Capacité à imaginer et concrétiser un outil du quotidien en répondant à un besoin personnel à travers le code.</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="project-links">
+                        <p>Non disponible</p>
+                    </div>
+                </div>
+                <div class="project-card" data-prototype-images="" data-design-images="assets/project9_figma.png | assets/project9_figma2.png | assets/project9_figma3.png" data-result-images="" data-videos="assets/project9_video.mp4">
+                    <div class="project-title">
+                        <div class="project-logo">
+                            <img src="assets/project9_logo.png" alt="Logo CARNET DE VOYAGE">
+                        </div>
+                        <h3>Carnet De Voyage</h3>
+                    </div>
+                    <div class="project-image" aria-hidden="true">
+                        <img src="assets/project9.png" alt="Screenshot of Project 9">
+                    </div>
+                    <div class="project-badges">
+                        <span class="badge badge-html">HTML</span>
+                        <span class="badge badge-css">CSS</span>
+                        <span class="badge badge-javascript">JavaScript</span>
+                        <span class="badge badge-php">PHP</span>
+                    </div>
+                    <div class="project-date">
+                        <p>Septembre-Octobre 2026</p>
+                    </div>
+                    <div class="project-type">
+                        <p>Projet Personnel</p>
+                    </div>
+                    <div class="project-description">
+                        <p>Application web de gestion de carnet de voyage.</p>
+                    </div>
+                    <div class="project-modal-details" hidden>
+                        <section>
+                            <h3>Le projet</h3>
+                            <p>Carnet de voyage digital & communautaire</p>
+                            <h3>Contexte</h3>
+                            <p>Projet personnel (Web & Mobile)</p>
+                            <h3>L'objectif</h3>
+                            <p>Concevoir et développer une plateforme sociale permettant aux voyageurs de documenter, cartographier et partager leurs aventures. L'application associe suivi géographique, narration multimédia et mécanique de gamification autour du voyage.</p>
+                        </section>
+                        <section>
+                            <h3>Choix de conception</h3>
+                            <ul>
+                                <li>Intégration d'une carte dynamique répertoriant les itinéraires de la communauté, avec découpage des séjours en étapes personnalisées (anecdotes, photos, géolocalisation).</li>
+                                <li>Création d'un système de profil complet intégrant un passeport digital (tampons virtuels par pays visité), un système de badges/succès à débloquer et un module de statistiques de voyage.</li>
+                                <li>Développement de la gestion d'amis, du fil d'actualités et des paramètres d'accès aux contenus (public / privé / amis).</li>
+                                <li>Structuration d'une galerie photo centralisée par voyage et mise en place d'un moteur de thèmes (personnalisation visuelle de la carte et de l'interface).</li>
+                                <li>Conception d'un back-office complet avec gestion affinée des rôles (Admin/Modérateur), modération du contenu signalé et gestion des utilisateurs (bannissement, support).</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Ce que j'ai appris</h3>
+                            <p>Conception et développement en autonomie complète (Design UX/UI, architecture front-end, logique métier et back-end).</p>
+                            <ul>
+                                <li>Elaboration d'une identité visuelle forte et d'une expérience utilisateur engageante (passeport, badges, cartes dynamiques).</li>
+                                <li>Structuration des données multimédias, des rôles utilisateurs (Admin, Modérateur, Membre) et des règles de sécurité/confidentialité.</li>
+                                <li>Pilotage d'un projet d'envergure de A à Z en liant esthétique visuelle, réactivité mobile/web et administration back-office.</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://carnet-de-voyage.onrender.com/connexion.php" target="_blank" rel="noopener noreferrer">Accéder au projet</a>
+                    </div>
+                </div>
+                <div class="project-card" data-prototype-images="" data-design-images="" data-result-images="" data-videos="">
+                    <div class="project-title">
+                        <div class="project-logo">
+                            <img src="assets/project10_logo.png" alt="Logo TAMAGOTCHI">
+                        </div>
+                        <h3>Tamagotchi</h3>
+                    </div>
+                    <div class="project-image" aria-hidden="true">
+                        <img src="assets/project10.png" alt="Screenshot of Project 10">
+                    </div>
+                    <div class="project-badges">
+                        <span class="badge badge-html">HTML</span>
+                        <span class="badge badge-css">CSS</span>
+                        <span class="badge badge-javascript">JavaScript</span>
+                    </div>
+                    <div class="project-date">
+                        <p>Novembre 2026</p>
+                    </div>
+                    <div class="project-type">
+                        <p>Projet Personnel</p>
+                    </div>
+                    <div class="project-description">
+                        <p>Tamagotchi interactif - Jeu de compagnon virtuel.</p>
+                    </div>
+                    <div class="project-modal-details" hidden>
+                        <section>
+                            <h3>Le projet</h3>
+                            <p>Tamagotchi interactif - Jeu de compagnon virtuel.</p>
+                            <h3>Contexte</h3>
+                            <p>Projet personnel (Design & Développement Web)</p>
+                            <h3>L'objectif</h3>
+                            <p>Concevoir et développer un jeu web inspiré du célèbre Tamagotchi, alliant illustrations originales et mécaniques de jeu en temps réel. L'utilisateur crée son compagnon, veille sur ses besoins vitaux au fil du temps et le fait évoluer à travers un système de niveaux et de sauvegarde persistante.</p>
+                        </section>
+                        <section>
+                            <h3>Choix de conception</h3>
+                            <ul>
+                                <li>Création sur-mesure des personnages (pets) et conception d'une interface ludique et intuitive (écran de création, tableau de bord du compagnon, barres de statut)</li>
+                                <li>Mise en place de l'écran de création (choix de la créature et attribution d'un nom) et développement d'une mécanique d'expérience (jauge sur 100 points) permettant de faire monter son compagnon de niveau.</li>
+                                <li>Programmation de trois jauges dynamiques (Bonheur, Énergie, Faim) qui diminuent progressivement avec le temps, couplées à un panneau d'actions interactives (nourrir, jouer, dormir, soigner).</li>
+                                <li>Implémentation d'un système de sauvegarde automatique permettant de conserver l'état du Tamagotchi entre deux sessions, accompagné d'un tableau des scores passés.</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Ce que j'ai appris</h3>
+                            <p>Projet réalisé en autonomie : de l'illustration vectorielle des personnages sur Figma jusqu'au développement de la logique de jeu et de l'interface web.</p>
+                            <ul>
+                                <li>Donner littéralement vie à ses propres créations graphiques Figma en les intégrant dans un environnement interactif.</li>
+                                <li>Maîtriser les intervalles de temps en JavaScript (setInterval, calcul du temps écoulé), les interactions d'état et l'équilibrage d'une boucle de gameplay.</li>
+                                <li>Structurer et sauvegarder l'avancement d'un utilisateur pour garantir une continuité d'expérience même après fermeture du navigateur.</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Sanitikhan/Tamagotchi" target="_blank" rel="noopener noreferrer">Voir sur Github</a>
+                        <a href="https://sanitikhan.github.io/Tamagotchi/" target="_blank" rel="noopener noreferrer">Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PARCOURS SECTION -->
+        <section class="section parcours-section" id="parcours">
+            <h2>Parcours</h2>
+            <div class="section-text">
+                <p>Voici un aperçu de mon parcours académique et professionnel.</p>
+            </div>
+            <div class="parcours-timeline" aria-label="Les étapes de mon parcours">
+                <article class="timeline-item">
+                    <span class="timeline-marker" aria-hidden="true">01</span>
+                    <div class="timeline-content">
+                        <p class="timeline-label">Réflexion &amp; créativité</p>
+                        <h3>Les fondations : philosophie et esthétique</h3>
+                        <p>Mon parcours commence par la philosophie, qui m'a appris à structurer ma pensée, questionner la logique et développer un attrait pour l'écriture. Ajouté à des expériences précoces axées sur le visuel et la création, où le sens du détail est clé, j'ai très tôt developpé une sensibilité pour ce qui est à la fois beau, logique et structuré.</p>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-marker" aria-hidden="true">02</span>
+                    <div class="timeline-content">
+                        <p class="timeline-label">Premiers pas dans le numérique</p>
+                        <h3>La technique : informatique et premier stage</h3>
+                        <p>Naturellement attiré par le numérique, j'ai suivi deux ans de Bachelor en informatique. C'est durant cette période, notamment grâce à un stage dédié à la refonte complète d'un site web, que j'ai eu la confirmation de mon attrait pour le web : la capacité de transformer un concept visuel en une interface concrète.</p>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-marker" aria-hidden="true">03</span>
+                    <div class="timeline-content">
+                        <p class="timeline-label">Aujourd’hui</p>
+                        <h3>L'autonomie : apprendre en créant</h3>
+                        <p>Depuis un an, je poursuis mon cheminement en autodidacte. Cette démarche autonome me permet d'approfondir mes compétences à mon rythme, de réaliser des projets personnels de A à Z et de parfaire la synergie entre design UI/UX et code Front-End.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="section contact-section" id="contact">
+            <div class="contact-card">
+                <div class="contact-intro">
+                    <p class="contact-eyebrow">Un projet en tête ?</p>
+                    <h2>Faisons quelque chose de beau ensemble.</h2>
+                    <p>Une question, une idée ou une opportunité ? Je serais ravie d’en discuter avec vous.</p>
+                    <a class="contact-email" href="mailto:anaelle.boyer@gmail.com">
+                        <span class="material-symbols-rounded" aria-hidden="true">mail</span>
+                        <span>Écrivez-moi par email</span>
+                        <span class="contact-arrow" aria-hidden="true">↗</span>
+                    </a>
+                </div>
+                <div class="contact-socials" aria-label="Retrouvez-moi sur les réseaux">
+                    <p class="contact-socials-label">Retrouvez-moi aussi ici</p>
+                    <a href="https://linkedin.com/in/anaëlle-boyer-84b6742b2" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M416 32L31.9 32C14.3 32 0 46.5 0 64.3L0 447.7C0 465.5 14.3 480 31.9 480L416 480c17.6 0 32-14.5 32-32.3l0-383.4C448 46.5 433.6 32 416 32zM135.4 416l-66.4 0 0-213.8 66.5 0 0 213.8-.1 0zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77zM384.3 416l-66.4 0 0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2z"/></svg>
+                    LinkedIn
+                </a>
+                <a href="https://instagram.com/Sanimbes" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    Instagram
+                </a>
+                <a href="https://github.com/Sanitikhan" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg>
+                    GitHub
+                </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <dialog class="project-dialog" aria-labelledby="project-dialog-title">
+        <div class="project-dialog-header">
+            <h2 id="project-dialog-title"></h2>
+            <button class="project-dialog-close" type="button" aria-label="Fermer la fenêtre">×</button>
+        </div>
+        <div class="project-dialog-content"></div>
+    </dialog>
+    <dialog class="media-viewer" aria-label="Aperçu du média">
+        <button class="media-viewer-close" type="button" aria-label="Fermer l’aperçu">×</button>
+        <div class="media-viewer-content"></div>
+    </dialog>
+
+    <footer>
+        <p>&copy; 2026 Sanimbes. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/brands.js"></script>
+</body>
+</html>
